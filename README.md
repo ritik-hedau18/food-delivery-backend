@@ -184,4 +184,4 @@ order_items  (order_id → orders, menu_item_id → menu_items)
 
 **Ritik Hedau**  
 Java Backend Developer  
-[GitHub](https://github.com/ritik-hedau18) | [LinkedIn](https://www.linkedin.com/in/ritik-hedau-4b51b2203/)
+[GitHub](https://github.com/ritik-hedau18)

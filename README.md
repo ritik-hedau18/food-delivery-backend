@@ -9,7 +9,7 @@ A production-ready REST API backend for a food delivery platform (similar to Swi
 | Technology | Purpose |
 |------------|---------|
 | Java 17+ | Core language |
-| Spring Boot 3 | Backend framework |
+| Spring Boot  | Backend framework |
 | Spring Security | Authentication & Authorization |
 | JWT (JJWT 0.13) | Stateless token-based auth |
 | Spring Data JPA | Database ORM |

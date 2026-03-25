@@ -14,7 +14,6 @@ A production-ready REST API backend for a food delivery platform (similar to Swi
 | JWT (JJWT 0.13) | Stateless token-based auth |
 | Spring Data JPA | Database ORM |
 | PostgreSQL | Relational database |
-| Lombok | Boilerplate reduction |
 | Maven | Dependency management |
 
 ---

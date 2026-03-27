@@ -8,13 +8,10 @@ A production-ready REST API backend for a food delivery platform (similar to Swi
 
 | Technology | Purpose |
 |------------|---------|
+
 | Java 17+ | Core language |
-| Spring Boot  | Backend framework |
+| Spring Boot | Backend framework |
 | Spring Security | Authentication & Authorization |
-| JWT (JJWT 0.13) | Stateless token-based auth |
-| Spring Data JPA | Database ORM |
-| PostgreSQL | Relational database |
-| Maven | Dependency management |
 
 ---
 
@@ -61,6 +58,22 @@ Each module contains:
 
 ---
 
+## 📄 API Documentation (Swagger)
+
+Interactive API documentation is available using Swagger UI.
+
+🔗 Access Swagger UI:
+http://localhost:8080/swagger-ui/index.html
+
+### Features
+- Test all REST APIs directly from browser
+- View request/response formats
+- No need for Postman for basic testing
+
+### Notes
+- Start the application before accessing Swagger
+- JWT-protected endpoints require authentication token
+
 ## 📌 API Endpoints
 
 ### Auth
@@ -69,6 +82,7 @@ Each module contains:
 | POST | `/api/auth/register` | Public | Register new user |
 | POST | `/api/auth/login` | Public | Login & get JWT token |
 | GET | `/api/auth/me` | Authenticated | Get current user info |
+
 
 ### Restaurants
 | Method | Endpoint | Access | Description |

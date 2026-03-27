@@ -5,6 +5,7 @@ import com.app.food_delivery_app.auth.dto.LoginRequest;
 import com.app.food_delivery_app.auth.dto.RegisterRequest;
 import com.app.food_delivery_app.auth.service.AuthService;
 import com.app.food_delivery_app.config.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import java.security.Principal;
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
+@Tag(name = "1. Auth", description = "Register, Login, JWT Token")
 public class AuthController {
 
     private final AuthService authService;

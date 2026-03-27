@@ -4,6 +4,7 @@ import com.app.food_delivery_app.config.ApiResponse;
 import com.app.food_delivery_app.restaurant.dto.RestaurantRequest;
 import com.app.food_delivery_app.restaurant.dto.RestaurantResponse;
 import com.app.food_delivery_app.restaurant.service.RestaurantService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -15,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/restaurants")
 @RequiredArgsConstructor
+@Tag(name = "2. Restaurant", description = "Restaurant management")
 public class RestaurantController {
 
     private final RestaurantService restaurantService;

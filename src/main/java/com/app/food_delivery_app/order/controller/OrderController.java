@@ -4,6 +4,7 @@ import com.app.food_delivery_app.config.ApiResponse;
 import com.app.food_delivery_app.order.dto.*;
 import com.app.food_delivery_app.order.enums.OrderStatus;
 import com.app.food_delivery_app.order.service.OrderService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +17,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/orders")
 @RequiredArgsConstructor
+@Tag(name = "5. Order", description = "Order lifecycle management")
 public class OrderController {
 
     private final OrderService orderService;

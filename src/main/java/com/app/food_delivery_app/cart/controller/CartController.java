@@ -3,6 +3,7 @@ package com.app.food_delivery_app.cart.controller;
 import com.app.food_delivery_app.cart.dto.*;
 import com.app.food_delivery_app.cart.service.CartService;
 import com.app.food_delivery_app.config.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -13,6 +14,7 @@ import java.security.Principal;
 @RestController
 @RequestMapping("/api/cart")
 @RequiredArgsConstructor
+@Tag(name = "4. Cart", description = "Cart management")
 public class CartController {
 
     private final CartService cartService;
